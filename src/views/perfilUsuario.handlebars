@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Usuario</title>
+  <link rel="stylesheet" href="/css/styles.css"> 
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a tu perfil</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Información del Usuario</h2>
+      <ul>
+        <li><strong>Nombre:</strong> {{user.first_name}} {{user.last_name}}</li>
+        <li><strong>Email:</strong> {{user.email}}</li>
+        <li><strong>Edad:</strong> {{user.age}}</li>
+        <li><strong>Rol:</strong> {{user.role}}</li>
+      </ul>
+    </section>
+
+    <section>
+      <a href="/logout" class="btn">Cerrar Sesión</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mi Aplicación. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
